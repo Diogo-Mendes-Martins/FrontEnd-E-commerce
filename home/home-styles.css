@@ -1,0 +1,143 @@
+/* Fonte */
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
+/* Cores */
+
+:root {
+  --cor1: #ffeed7;
+  --cor2: #f8ea91;
+  --cor3: #ff3333;
+}
+
+/* Configs */
+
+.sec2 {
+  background-color: var(--cor1);
+  height: 1200px;
+}
+
+#tituloSabores {
+  text-align: center;
+  background-color: var(--cor3);
+  color: var(--cor1);
+  font-size: 3vw;
+  font-family: "Bungee";
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#pacotes {
+  width: 1200px;
+  max-width: 100%;
+  height: auto;
+}
+
+#texto {
+  font-family: "Bungee";
+  font-size: 1.5vw;
+  min-width: 1.5vw;
+  color: var(--cor3);
+}
+
+.botao {
+  font-family: "Bungee";
+  color: var(--cor1);
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  font-size: 2vw;
+  text-decoration: none;
+  text-align: center;
+  background-color: var(--cor3);
+  border-radius: 15px;
+  height: 80px;
+  width: 100%;
+  max-width: 400px;
+  min-width: 200px;
+}
+
+#produtos {
+  padding-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1600px) {
+  #produtos {
+    flex-direction: column;
+  }
+  #pacotes {
+    padding-bottom: 100px;
+  }
+
+  #texto{
+    font-size: 2vw;
+  }
+
+  
+}
+
+@media (max-width: 1200px) {
+  
+
+  #texto{
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 800px) {
+
+
+  #texto{
+    font-size: 6vw;
+  }
+
+  .botao{
+    font-size: 3vw;
+  }
+}
+
+
+
+
+
+
+  
+
+@media (max-width: 600px) {
+  #tituloSabores{
+    font-size: 6vw;
+  }
+
+  #produtos{
+    padding-top: 50px;
+  }
+
+  #texto{
+    font-size: 6vw;
+  }
+
+  .botao{
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 400px) {
+
+
+  .botao{
+    font-size: 6vw;
+  }
+
+  .sec2{
+    height: 600px;
+  }
+}
+
+.botao:hover{
+  background-color: #555;
+}

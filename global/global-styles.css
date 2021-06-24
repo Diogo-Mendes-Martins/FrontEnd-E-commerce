@@ -1,0 +1,439 @@
+/*Cores*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+:root {
+  --cor1: #ffeed7;
+  --cor2: #f8ea91;
+  --cor3: #ff3333;
+}
+
+body {
+    background-color: var(--cor1);
+}
+
+/*Header*/
+
+#header {
+  height: 120px;
+  position: relative;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+  background-color: var(--cor3);
+  box-shadow: 5px 0px 15px var(--cor3);
+}
+#logoHeader {
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
+  top: 20px;
+  height: auto;
+  width: 100%;
+  max-width: 200px;
+  display: inline-block;
+}
+
+#header h1 {
+  font-size: 34px;
+  margin: 0;
+  line-height: 1;
+  font-family: "Bungee";
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding-left: 0px;
+}
+#header h1 a,
+#header h1 a:hover {
+  color: #000;
+  padding-left: 5px;
+  border-left: 4px solid grey;
+}
+
+#nav-menu-container {
+  float: right;
+  margin: 0;
+  padding-top: 55px;
+}
+.nav-menu > li {
+  margin-left: 100px;
+}
+.nav-menu > li {
+  float: left;
+}
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+.nav-menu,
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header-scrolled .nav-menu li:hover > a,
+.header-scrolled .nav-menu > .menu-active > a {
+  color: var(--cor1);
+}
+.header-scrolled .nav-menu a {
+  color: black;
+}
+.nav-menu li:hover > a,
+.nav-menu > .menu-active > a {
+  color: #131313 !important;
+}
+
+.nav-menu a {
+  padding: 0 8px 10px 8px;
+  text-decoration: none;
+  display: inline-block;
+  color: var(--cor1) !important;
+  font-family: "Bungee";
+  font-weight: 700;
+  font-size: 25px;
+  text-transform: uppercase;
+  outline: none;
+}
+#mobile-nav-toggle {
+  display: inline;
+}
+#mobile-nav-toggle {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin: 20px 20px 0 0;
+  border: 0;
+  background: none;
+  font-size: 40px;
+  display: none;
+  transition: all 0.4s;
+  outline: none;
+  cursor: pointer;
+  padding-right: 40px;
+  padding-top: 20px;
+}
+
+@media (max-width: 400px) {
+  #mobile-nav-toggle {
+    padding-right: 10px;
+  }
+}  
+
+  
+
+
+
+#mobile-body-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+body.mobile-nav-active #mobile-nav {
+  left: 0;
+}
+#mobile-nav {
+  position: fixed;
+  top: 0;
+  padding-top: 18px;
+  bottom: 0;
+  z-index: 998;
+  background: rgba(0, 0, 0, 0.8);
+  left: -260px;
+  width: 260px;
+  overflow-y: auto;
+  transition: 0.4s;
+}
+#mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#mobile-nav ul li {
+  position: relative;
+}
+#mobile-nav ul li a {
+  color: var(--cor1);
+  font-size: 30px;
+  text-transform: uppercase;
+  overflow: hidden;
+  padding: 10px 22px 10px 15px;
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  display: block;
+  outline: none;
+  font-weight: 700;
+  font-family: "Bungee";
+}
+#mobile-nav ul .menu-has-children i.fa-chevron-up {
+  color: var(--cor1);
+}
+#mobile-nav ul .menu-has-children i {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  padding: 15px;
+  cursor: pointer;
+  color: #fff;
+}
+#mobile-nav ul .menu-item-active {
+  color: var(--cor1);
+}
+#mobile-nav ul li li {
+  padding-left: 30px;
+}
+
+.menu-has-children ul {
+  display: none;
+}
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+
+.sf-arrows .sf-with-ul:after {
+  content: "\f107";
+  position: absolute;
+  right: 15px;
+  font-family: "Bungee";
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+}
+
+.sf-arrows ul .sf-with-ul:after {
+  content: "\f105";
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.sfHover > ul {
+  display: block;
+}
+.nav-menu ul {
+  margin: 4px 0 0 0;
+  padding: 10px;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  background: #fff;
+}
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.sf-arrows .sf-with-ul {
+  padding-right: 30px;
+}
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+@media (max-width: 1300px) {
+  #nav-menu-container {
+    display: none;
+  }
+
+  #mobile-nav-toggle {
+    display: inline;
+  }
+}
+
+@media (max-width: 330px) {
+  #logoHeader{
+    height: auto;
+    max-width: 130px;
+    padding-top: 16px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+  }
+
+
+}  
+
+
+
+/*Footer*/
+
+.sec3 {
+  height: 600px;
+  background-color: var(--cor3);
+}
+
+#contatos {
+  font-family: "Bungee";
+  text-align: center;
+  font-size: 3vw;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media (max-width: 1300px) {
+  #contatos{
+    font-size: 5vw;
+  }
+}  
+
+@media (max-width: 500px) {
+  #contatos{
+    font-size: 10vw;
+  }
+
+  #facebook{
+    padding-right: 25px;
+  }
+
+  #instagram {
+    padding-right: 25px;
+  }
+} 
+
+footer li {
+  display: inline-block;
+  padding-right: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: var(--cor1);
+}
+#contatos :hover {
+  color: #131313;
+}
+
+#titulo-contato {
+  text-align: center;
+  background-color: var(--cor1);
+
+  font-family: "Bungee";
+  color: black;
+}
+.fa-bars{
+  color: var(--cor1);
+}
+.fa-times{
+  color: var(--cor1);
+}
+.logos {
+  text-align: center;
+  max-width: 100%;
+  overflow: hidden;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 120px;
+  padding-left: 65px;
+}
+
+.logos :hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#instagram {
+  width: 80px;
+  max-width: 100%;
+  
+}
+
+#facebook {
+  width: 87px;
+  max-width: 100%;
+  
+}
+
+#zoomlogofooter {
+  display: inline;
+}
+
+#logofooter {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/*Botao topo*/
+
+#botaoTopo {
+  font-family: "Bungee";
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: var(--cor3);
+  border-style: solid;
+  border-color: var(--cor1);
+  color: var(--cor1);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+#botaoTopo:hover {
+  background-color: #555;
+}
+
+#modalConfig{
+  font-family: "Bungee";
+
+}
+div.modal-header{ background-color: var(--cor3);
+
+}
+div.modal-body{
+  background-color: var(--cor1);
+}
+div.modal-footer{
+  background-color: var(--cor3);
+}
+button.btn-primary{
+  background-color: #131313;
+  border-color: #131313;
+  color: var(--cor1);
+}
+.btn-primary:hover {
+  color: #131313;
+  background-color:var(--cor1);
+  border-color: var(--cor1);
+}
+button.btn-secondary{
+  background-color: #131313;
+  border-color: #131313;
+  color: var(--cor1);
+}
+.btn-secondary:hover {
+  color: #131313;
+  background-color:var(--cor1);
+  border-color: var(--cor1);
+}
+h5{
+  color: var(--cor1);
+}
+.btn-close{
+  font-size: 20px;
+  opacity: 10;
+}
+
+button.delete-item.btn.btn-danger{
+  background-color: var(--cor3);
+}
+
+button.plus-item.btn.btn-primary.input-group-addon:hover{
+  background-color: var(--cor3);
+}
+
+button.minus-item.btn.btn-primary.input-group-addon:hover{
+  background-color: var(--cor3);
+}

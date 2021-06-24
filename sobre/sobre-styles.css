@@ -1,0 +1,101 @@
+/*Cores*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+:root {
+  --cor1: #ffeed7;
+  --cor2: #f8ea91;
+  --cor3: #ff3333;
+}
+
+/*Configs*/
+
+#divSobre {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#logoSobre {
+  background-color: black;
+  height: 179px;
+  overflow: hidden;
+}
+#sobreMontanha {
+  width: 900px;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  padding-right: 70px;
+}
+#marcaSobre {
+  background-color: var(--cor3);
+}
+body {
+  background-color: var(--cor1);
+}
+
+#texto {
+  font-family: "Bungee";
+  width: 1000px;
+  max-width: 100%;
+  height: auto;
+  font-size: 2vh;
+  border-style: solid;
+  border-color: var(--cor3);
+  padding: 20px;
+  border-radius: 2%;
+
+}
+#texto :hover {
+  color: var(--cor3);
+}
+
+@media (max-width: 1300px) {
+  #divSobre {
+    flex-direction: column;
+  }
+  #texto {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #sobreMontanha {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 100px;
+  }
+
+  #textoSobre{
+    text-align: justify;
+    width: 800px;
+    overflow: hidden;
+    max-width: 100%;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 500px) {
+  
+  #texto {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #textoSobre{
+    font-size: 2vh;
+  }
+
+  #divSobre{
+    padding-top: 60px;
+  }
+
+  
+
+}
+

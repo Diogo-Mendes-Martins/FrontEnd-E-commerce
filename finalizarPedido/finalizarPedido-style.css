@@ -1,0 +1,59 @@
+/*Cores*/
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+:root {
+  --cor1: #ffeed7;
+  --cor2: #f8ea91;
+  --cor3: #ff3333;
+}
+#finalizarPedido{
+    font-family: "Bungee";
+    max-width: 100%;
+    height: auto;
+    font-size: 2vh;
+    border-style: solid;
+    border-color: var(--cor3);
+    padding: 20px;
+    border-radius: 2%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+
+.nomesGrupos{
+    list-style: none;
+    font-size: 2vw;
+}
+
+
+@media (max-width: 1300px) {
+    #finalizarPedido{
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+        
+    }
+    .nomesGrupos{
+        font-size: 2vh;
+    }
+  
+}
+@media (max-width: 500px) {
+  
+        #finalizarPedido {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 60px;
+        }
+      
+        .nomesGrupos{
+          font-size: 2vh;
+        }
+      
+        
+
+    
+}
+
+
