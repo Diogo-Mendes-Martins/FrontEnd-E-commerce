@@ -1,2 +1,2 @@
 # FrontEnd-E-commerce
-Trabalho de Front End -> Serra Chips
+Trabalho de Front End -> SerraChips
